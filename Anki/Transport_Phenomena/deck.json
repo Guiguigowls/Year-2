@@ -1,0 +1,950 @@
+{
+    "__type__": "Deck",
+    "children": [],
+    "crowdanki_uuid": "67e802ae-ff8d-11ea-9c88-9c305bfc3a44",
+    "deck_config_uuid": "67e802af-ff8d-11ea-a244-9c305bfc3a44",
+    "deck_configurations": [
+        {
+            "__type__": "DeckConfig",
+            "autoplay": true,
+            "crowdanki_uuid": "67e802af-ff8d-11ea-a244-9c305bfc3a44",
+            "dyn": false,
+            "lapse": {
+                "delays": [
+                    10.0
+                ],
+                "leechAction": 0,
+                "leechFails": 8,
+                "minInt": 1,
+                "mult": 0.0
+            },
+            "maxTaken": 60,
+            "name": "Default",
+            "new": {
+                "bury": false,
+                "delays": [
+                    1.0,
+                    10.0
+                ],
+                "initialFactor": 2500,
+                "ints": [
+                    1,
+                    4,
+                    0
+                ],
+                "order": 1,
+                "perDay": 20,
+                "separate": true
+            },
+            "replayq": true,
+            "rev": {
+                "bury": false,
+                "ease4": 1.3,
+                "fuzz": 0.05,
+                "hardFactor": 1.2,
+                "ivlFct": 1.0,
+                "maxIvl": 36500,
+                "minSpace": 1,
+                "perDay": 200
+            },
+            "timer": 0
+        }
+    ],
+    "desc": "",
+    "dyn": 0,
+    "extendNew": 10,
+    "extendRev": 50,
+    "media_files": [
+        "paste-4c02ada64c170968f89e013d737447f96cd52592.jpg",
+        "paste-6ce1e5bca1fd2d2601f6a1a635007ee3dcbe37dd.jpg",
+        "paste-8b064235fc7f8c367636b4f623b6823e2eff1beb.jpg",
+        "paste-f2689a2c473b85e9e747b1e5a953c115245bbfd5.jpg"
+    ],
+    "name": "Transport Phenomena",
+    "note_models": [
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "21d991db-ff8d-11ea-b593-9c305bfc3a44",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n\n.cloze {\n font-weight: bold;\n color: blue;\n}\n.nightMode .cloze {\n color: lightblue;\n}",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Text",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Extra",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Cloze",
+            "req": [],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{cloze:Text}}<br>\n{{Extra}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Cloze",
+                    "ord": 0,
+                    "qfmt": "{{cloze:Text}}"
+                }
+            ],
+            "type": 1,
+            "vers": []
+        },
+        {
+            "__type__": "NoteModel",
+            "crowdanki_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "css": ".card {\n font-family: arial;\n font-size: 20px;\n text-align: center;\n color: black;\n background-color: white;\n}\n",
+            "flds": [
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Front",
+                    "ord": 0,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                },
+                {
+                    "font": "Arial",
+                    "media": [],
+                    "name": "Back",
+                    "ord": 1,
+                    "rtl": false,
+                    "size": 20,
+                    "sticky": false
+                }
+            ],
+            "latexPost": "\\end{document}",
+            "latexPre": "\\documentclass[12pt]{article}\n\\special{papersize=3in,5in}\n\\usepackage[utf8]{inputenc}\n\\usepackage{amssymb,amsmath}\n\\pagestyle{empty}\n\\setlength{\\parindent}{0in}\n\\begin{document}\n",
+            "latexsvg": false,
+            "name": "Basic-6b848",
+            "req": [
+                [
+                    0,
+                    "any",
+                    [
+                        0
+                    ]
+                ]
+            ],
+            "sortf": 0,
+            "tags": [],
+            "tmpls": [
+                {
+                    "afmt": "{{FrontSide}}\n\n<hr id=answer>\n\n{{Back}}",
+                    "bafmt": "",
+                    "bfont": "",
+                    "bqfmt": "",
+                    "bsize": 0,
+                    "did": null,
+                    "name": "Card 1",
+                    "ord": 0,
+                    "qfmt": "{{Front}}"
+                }
+            ],
+            "type": 0,
+            "vers": []
+        }
+    ],
+    "notes": [
+        {
+            "__type__": "Note",
+            "fields": [
+                "Common Assumptions on Conservation Equations<div><br></div><div><b>Closed System - </b>Does not have flows in and out of the substance. The system is said to be {{c1::closed to mass flow}} but not other flows such as {{c1::energy}} or {{c1::momentum}}. Equation for this system is:</div><div><br></div><div>{{c1::Generation=Accumulation}}</div><div><div><br></div><div><b>No Generation - </b>Certain quantities are always {{c2::conserved}}, never {{c2::created}} or {{c2::destroyed}}. Model does not need to include in a {{c2::generation term}}. Equation:</div><div><br></div><div>{{c2::input-output=Accumulation}}</div><div><br></div><div>The most commonly used conserved quantities are <b>mass </b>and <b>energy.</b></div><div><b><br></b></div><div><b>Steady State - </b>A system that {{c3::does not accumulate}}&nbsp;a {{c3::substance}}. Equation:</div><div><br></div><div>{{c3::\\(input+generation-output-consumption=0\\)}}</div><div><br></div><div><b>Conservation of Mass&nbsp;</b></div><div><br></div><div><div><div>{{c4::<div><div>input-output=0</div><div>input=output</div></div>}}<br></div></div></div><div><br></div><div><br></div><div><br></div></div>",
+                ""
+            ],
+            "guid": "l<^VR,~C2g",
+            "note_model_uuid": "21d991db-ff8d-11ea-b593-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fluid",
+                "<div>A substance that deforms continuously under the act of shear stress.</div><div><br></div><div><br></div><div>A fluid cannot resist shearing forces and can only sustain normal forces without deformation.&nbsp;</div><div><br></div><div><br></div>A substance which flows.<div><br></div><div><b>Fluids </b>describe <b>liquids</b>, <b>vapors, gases </b>and <b>supercritical fluids.</b></div>"
+            ],
+            "guid": "L/x9PsDb)d",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Eddy (Fluid Dynamics)",
+                "Swirling of a fluid and the reverse current created when the fluid is in a turbulent flow regime.&nbsp;<div><br></div><div>Swirl of fluid created on each edge of the obstcle.&nbsp;</div>"
+            ],
+            "guid": "mYeeT>Gszm",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Continuum",
+                "Considering a fluid as a continuous disruption of matter.<div><br></div><div>Continuum is concerned with describing the <b>average conditions </b>of a fluid, this being its velocity, teperature, density...</div><div><br></div><div>Instead of a conglomertaion of seperate molecules, the fluid is regarded as a continuous distribution of matter with no empty space (continuum). Assumption is justifiable, because the number of molecuels involved in the situation is vast and the distances between them are small.<br><div><br></div><div>The treatment of fluids as continua is valid whenever the smallest fluid volume of interest contains a <b>sufficient number of molecules</b> to make <b><i><u>statistical averages meaningful</u></i></b>.&nbsp;</div><div><br></div><div>Valid for liquids and gases at low pressures.</div><div><br></div><div>Velocity, acceleration and the properties of the fluid are assumed to vary continuously (or remain constant) from one point to another in the fluid.</div><div><br></div><div>Macroscopic properties of a continuum (Tempeature, Pressure...) are considered to vary smoothly (continuously) from point to point in the fluid.</div></div>"
+            ],
+            "guid": "Kwz0Q!^DV`",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does Pressure Vary with Direction at a Given Point?",
+                "Pressure at a point is independent of direction."
+            ],
+            "guid": "z$/rGZB3`:",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does pressure vary with Verticle Depth?",
+                "Pressure varies with elevation for a static fluid, according to the relationship:<div>\\((dP/dz=-pg)\\)<br></div>"
+            ],
+            "guid": "ytnb&bPG5g",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "How does Pressure Vary with Horizontal Position?",
+                "Pressure is constant with horizontal position for a continuous expanse (continum) of static fluid.&nbsp;"
+            ],
+            "guid": "JNzb`}SduP",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Pressure Head&nbsp;",
+                "The pressure of a fluid may be expresssed as the height of a column of fluid that gives an equivelent pressure.<div><br></div><div>Pressures are often measured with manometers which gie presssure directly as heads.&nbsp;</div><div><br></div><div>Pressure is related to head by \\(P=pgh\\)</div>"
+            ],
+            "guid": "NMm8)l7{Sb",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Mechanical Equilibrium&nbsp;",
+                "If two gases are in separate containers that share a common movable wall (Fig. 1.1),<br>the gas that has the higher pressure will tend to compress (reduce the volume of ) the<br>gas that has lower pressure. The pressure of the high-pressure gas will fall as it expands<br>and that of the low-pressure gas will rise as it is compressed. There will come a stage<br>when the two pressures are equal and the wall has no further tendency to move. This<br>condition of equality of pressure on either side of a movable wall (a ‘piston’) is a state<br>of mechanical equilibrium between the two gases."
+            ],
+            "guid": "Q[3+M},P3I",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Viscosity",
+                "<div>The force acting in opposition to the shearing forces.</div><div><br></div><div>Resistance to any force tending to cause one layer to move over another.</div><div><br></div>The migration of liner momentum down a velocity gradient."
+            ],
+            "guid": "pbxf7P+}B2",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Effusion",
+                "<div>Effusion occurs through an orifice smaller than the mean free path of the particles in motion, whereas diffusion occurs through an opening in which multiple particles can flow through simultaneously.<br></div><div><br></div>The flow of gases under pressure through small holes such as a gas escaping<br>from a cracked weld on a process vessel. The rate of flow is inversely proportional to the<br>density.<div><br></div><div>Escape of the gas is due to the <b>pressure difference </b>between the <b>container </b>and the <b>exterior.</b></div><div><b><br></b></div><div>All molecules which arrive at the hole continue and pass through the hole since <b>collisions </b>between moelcules in the region of the hole are <b>negligible.&nbsp;</b></div>"
+            ],
+            "guid": "C]BZ^*+eFE",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Diffusion",
+                "The process of movement in which molecules of one substance move and penetrate<br>other substances. In a mixture of gases, the rate of diffusion of one gas into another<br>is inversely proportional to the square root of its densities ( see graham’s law ). In liquids,<br>the diffusion of a solute through a solvent to produce a solution of uniform concentration is<br>slower. Diffusion in solids occurs much more slowly."
+            ],
+            "guid": "p>#Uf@zdi7",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Steady Flow&nbsp;",
+                "If the flow at every point is independent of time, the flow is termed steady; all properties are unchanged with respect to time, partial derivatives equate to zero."
+            ],
+            "guid": "HtF@(Dr4q1",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Streamline&nbsp;",
+                "A <b><u><i>streamline </i></u></b>is the line drawn <u><i><b>tangental </b></i></u>to the <b><u><i>velocity vector</i></u></b> at each point in the <b>flow field</b>.<div><br></div><div>A streamline is <b>instantaneous</b>.&nbsp;<div><br></div><div>A streamline has <b>no width</b>, <b>no cross-sectional area.&nbsp;</b></div><div><br></div><div>The streamline shows us the direction of motion at any point in the flow field at any instant in time.</div><div><br></div><div>At any given instant, the direction of the velocity of every particle on the line is along the line. (tangental)</div><div><br></div><div><b>Steady Flow - </b>The <b><u><i>pattern </i></u></b>is <b><u><i>unchanging</i></u></b>.</div><div><br></div><div><b>Unsteady Flow - </b>The <b><u><i>pattern changes </i></u></b>with <b><u><i>time</i></u></b>.&nbsp;</div></div><div><br></div><div><b>Boundaries of Flow - </b>Are always composed of streamlines because there is no flow across them.&nbsp;</div><div><br></div><div>Provided that the flow is <b>continuous </b>every streamline must be a continuous line. Either extending to infinity both upstream or downstream or forming a closed curve.</div>"
+            ],
+            "guid": "qo5[<}Ru}v",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Flow Field",
+                "A region in which fluid flows."
+            ],
+            "guid": "H7vjsy+0}W",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Streamtube&nbsp;",
+                "A <b><u><i>bundle </i></u></b>of <b><u><i>neighgbouring </i></u></b><u><b><i>streamlines</i></b></u>, forming a passage through which fluid flows.<div><br></div><div>A <b><u><i>cross-section small</i></u></b> enough for the variation of velocity over it to be <b><u><i>negligible</i></u></b>.<br><div><br></div><div><b><i><u>Fluid </u></i></b>only <b><u><i>exchanges </i></u></b>when <b><u><i>entering </i></u></b>and <b><u><i>leaving </i></u></b>a <b><u><i>streamtube</i></u></b>.&nbsp;</div><div><br></div><div>Fluid does not flow accross the walls of a streamtube.&nbsp;</div><div><br></div><div>Streamlines cannot crosss.&nbsp;</div></div>"
+            ],
+            "guid": "d.,s,X7_c7",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Path Lines",
+                "Represent the position takne by a fluid particle at succesive times.&nbsp;<div><br></div><div>Fluid only enters and leaves at ends.&nbsp;</div>"
+            ],
+            "guid": "AS[w[d7/g%",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "System",
+                "A system may be defined as any prescribed and identifiable collection of matter, enclosed by a boundary which is separated it from its surroundings.<div><br></div><div>System Boundary can, and usually does, change shape, position and orientation relative to the observer.<br></div><div><br></div><div>No flows take place across a system boundary by definition.<br></div>"
+            ],
+            "guid": "IgUMZGdcLb",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Control Volume&nbsp;",
+                "A control volume is any volume of fixed shape and fixed position and orientation relative to the observer.<div><br></div><div>Control Volume Boundary is of fixed shape and fixed position and orientation, by definition.&nbsp;<br></div><div><br></div><div>Material may, and usually does, flow across a control volume boundary.&nbsp;<br></div>"
+            ],
+            "guid": "F38$xu@t)^",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Continuity Eqauation&nbsp;",
+                "<div>Principle of <b>conservation of mass </b>expresses the fact that mass can neither be <b>created nor destroyed </b>(exception Nuclear).</div><div><br></div><div>Applying this principle to a fixed region of fluid&nbsp;</div><div><br></div><div><b>mass input = mass output + mass accumulation&nbsp;</b></div><div><b><br></b></div><div><b>G<sub>1</sub>&nbsp;= G<sub>2</sub></b></div><div><b>p<sub>1</sub>v<sub>1</sub>A<sub>1</sub>&nbsp;= p<sub>2</sub>v<sub>2</sub>A<sub>2&nbsp;</sub>&nbsp;</b>density, velocity, and cross-sectional area</div><div><br></div><div><b>Large </b>cross-sectional area, <b>low </b>velocity&nbsp;</div><div><b>Small </b>cross-sectional area, <b>small </b>velocity</div><div><br></div><div>You can identify the velocity in any location of the pipe, if you have the cross-sectional area of the location.</div><div><b><br></b></div><div>If the flow is <b>steady </b>(<b>unchanging </b>with <b>time</b>) the <b>rate </b>at which mass is <b>accumulated </b>within the region is <b>zero.</b></div><div><b><br></b></div><div><b>mass input = mass output</b></div><div><br></div>A <b>zero generation term</b> in the Continuity Equation occurs when we consider (i) total mass (except during nuclear reactions), and (ii) when considering an inert component within the control volume (does not react).<div><br></div><div><b>input - output + generation - consumption = accumulation</b></div>"
+            ],
+            "guid": "tc4dM@1&^q",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Why are force balances on flow systems also momentum balances",
+                "Newton's second law can be stated as: \"the time rate of change of momentum of a system equals the net force acting on the system and takes place in the direction of the net force\".&nbsp;<div><br></div><div>Thus momentum and force are directly linked.&nbsp;</div><div><br></div><div>The <b>generation </b>term in the momentum balance equation is the <b><u><i>net force acting on the fluid</i></u> </b>in the <b>control volume.&nbsp;</b></div><div><br></div><div><b>Momentum is generated by forces.</b> So if we are to balance forces, we balance momentum, and vice versa.</div><div><br></div><div>Newton's Third Law of Motion states that forces are balanced by equal and opposing magnitudes, acting on the opposite direction to the first body.&nbsp;</div>"
+            ],
+            "guid": "bZN,0^(JPV",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Control Volume",
+                "The space inclosing all the stream tubes of a system.<div><br></div><div>It is to the boundaries of this volume that the external forces are applied.</div>"
+            ],
+            "guid": "KKy<V=$bA!",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Newton's Second Law",
+                "Newton’s Second Law states that the net force acting on a body in any fixed direction is equal to the rate of increase of momentum of the body in that direction."
+            ],
+            "guid": "NH}:eOA28=",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fluid&nbsp;",
+                "A substance that flows.&nbsp;<div><br></div><div>Any fluid no matter how thick or visous it is, flows under the action of a net shear force.</div><div><br></div><div>A fluid cannot resist shear forces (undergoing deformation), but can resist normal forces.</div><div><br></div><div>Gasses and liquids are both fluids.&nbsp;</div>"
+            ],
+            "guid": "zuzY5*s>%(",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Liquid",
+                "<div>A <b>fluid</b></div><div><br></div>A fixed mass (amount) of a liquid has a definite volume.<div><br></div><div>Volume undergoes slight variations with temperature and pressure.&nbsp;</div><div><br></div><div>Denisty variation is small.&nbsp;</div><div><br></div><div>If the capacity of the containing vessel is greater than the definite volume, the liquid only occupies part of the container and forms an interface seperating it from its own vapour.</div><div><br></div><div><b>Free Surface - </b>When a larger space is available than that required to contain its volume.&nbsp;</div>"
+            ],
+            "guid": "rq1hka&]++",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Incompressible Flow",
+                "<div><b>Incompressible Fluid - </b>Sunstance whose <b>specific volume (density) </b>does not change with temperature or pressure. Thus, the heat capacities of such substances are only dependent upon temperature.</div><div><br></div>A flow where the density of the fluid is constant.&nbsp;<div><br></div><div>Changes in density are considrered to be negligible (<b>constant denisty assumption</b>).</div><div><br></div><div>Compressible Fluid Flow - Fluids with significant density changes (gaseses).</div><div><br></div><div>Where there are large temperature and pressure changes.&nbsp;</div><div><br></div><div>Gases at high velocities &gt;20% the speed of sound (Buckingham Pi).</div>"
+            ],
+            "guid": "GNtEmeC}rk",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Laminar Flow&nbsp;",
+                "<div>Occurs at <b>velocities </b><b style=\"text-decoration-line: underline;\">low enough</b>&nbsp;for forces due to <b>viscosity </b>to predominate over <b>inertial </b>forces.&nbsp;</div><div><br></div><div>If any <b>individual particle </b>attempts to <b>stray </b>from its perscribed path, <b>viscosity </b>firmly&nbsp; <b>restrains </b>it and the <b>orderly procession </b>of <b>fluid particles </b>continues.&nbsp;</div><div><br></div>Characterised by streamlines and streamtubes.&nbsp;<div><br></div><div><b><u><i>Stratified layers</i></u></b> of fluid (<b>parallel layers</b> of flow).&nbsp;</div><div><br></div><div>Transport by molecular diffusion due to viscosity between them.</div><div><br></div><div>Viscous forces dominate and tend to damp out disturbances.</div><div><br></div><div>Occurs in high viscosity fluids&nbsp;</div><div><br></div><div>Flows in smaller diameter vessels.&nbsp;</div><div><br></div><div><b>Conduction </b>and <b>Diffusion</b></div>"
+            ],
+            "guid": "e(UcO&.WU/",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Turbulent Flow&nbsp;",
+                "Random three-dimensional flow&nbsp;<div><br></div><div>Turbulent eddies superimposed upon an average flow in the x-direction.</div><div><br></div><div>Eddies dominate transport process.</div><div><br></div><div><b><u><i>Inertial Forces</i></u></b> <b><u><i>dominate </i></u></b>and <b><u><i>Viscous Forces</i></u></b> are <u><b><i>unable </i></b></u>to <b><u><i>dampen </i></u></b>out <u><i><b>disturbances </b></i></u>and fluctuations.&nbsp;</div><div><br></div><div><b>Convection</b></div>"
+            ],
+            "guid": "f.=cUi2yq/",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Turbulent Eddies",
+                "Swirling of the fluid.<div><br></div><div><b><u><i>Reverse current</i></u></b> created when the fluid is in a <b><u><i>turbulent flow regime.</i></u></b></div>"
+            ],
+            "guid": "B,YWlN#^`o",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Shear Force",
+                "<b><u><i>Force tangental </i></u></b>to the <b><u><i>area </i></u></b>on which it acts.<div><br></div><div>Arising due to the <b><u><i>relative motion</i></u></b> between the <i><u><b>layers </b></u></i>is taking palce.&nbsp;</div><div><br></div><div><b>Shear Stress - </b>The ratio of the force to the are on which it acts.</div><div><br></div><div><b>Stress - </b>The <b><u><i>ratio </i></u></b>of the <b><u><i>instantaneous force</i></u></b> to the <i><u><b>cross sectional area</b></u></i> on which it acts.</div>"
+            ],
+            "guid": "NYc6BRxlX?",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fluid Comparison of Liquids and Gases",
+                "Gas, a fixed amount will always expand until its volume is equal to that of the container, achieving <b>equilibrium.</b><div><b><br></b></div><div>Gases are readily compressed under normal conditions, whilst liquids are regarded as incompressible.</div><div><br></div><div>Gases under conditions in which&nbsp; they experience a negligible volume change, behaving similarly to a liquid, the gases are considered incompressible.</div><div><br></div><div>Liquids have much greater densities than gases and conversely when condisering forces and pressure, the weights of liquids play a key role.</div><div><br></div><div>Effects due to weight can normally be ignored for gases.&nbsp;</div>"
+            ],
+            "guid": "rfp/QJ5(BP",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Dimensional Homogeneity",
+                "<b><u><i>All terms</i></u></b>, <b><u><i>added</i></u></b>, <b><u><i>substracted </i></u></b>or <b><i><u>equated </u></i></b>must have identical dimensional formulae; that is, an equation must be dimensionally homogenous."
+            ],
+            "guid": "pl0wH^[b+q",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Mean Density&nbsp;",
+                "The ratio of the mass of a given amount of a substance to the volume that this substance occupies.&nbsp;<div><br></div><div>The<b><u><i> mean density</i></u></b> in <b><u><i>all parts</i></u></b> of the <b><u><i>substance </i></u></b>is the <b><u><i>same </i></u></b>then the <b><u><i>density </i></u></b>is said to be <b style=\"\"><u>uniform</u></b><i>.</i></div>"
+            ],
+            "guid": "rZXwu(15&2",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Relative Denisty",
+                "The <b><u><i>ratio </i></u></b>of the <b><u><i>density </i></u></b>of a substance to some <b><u><i>standard density.&nbsp;</i></u></b><div><br></div><div>Standard density chosen for comparison with the denisty of a solid or a liquid is that of water at 4 degrees celcius.</div>"
+            ],
+            "guid": "wlK@*_[7Sz",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Specific Gravity&nbsp;",
+                "The relative density of a solid or a liquid.<div><br></div><div>The ratio of the density of the substance to the density of a reference substance under specific conditions.<br><div><br></div><div>Relative density is the ratio of two magnitudes of the same kind, it is merely a numeric without units (dimensions).</div></div>"
+            ],
+            "guid": "tjtz&`2&y/",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Pressure",
+                "A fluid always has pressure. As a result of innumerable molecular collisions, any part of the fluid must experience forces exerted on it by adjoining fluid or by adjoining solid boundaries.<div><br></div><div>Pressure <b>cannot </b>be measured directly, all instruments measure a diffrence in pressure.&nbsp;</div><div><br></div><div>The difference is frequently that between the pressure of the fluid under consideration and the pressure of the atmosphere.</div>"
+            ],
+            "guid": "HR0g^v(VsX",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Gauge Pressure",
+                "Atmospheric pressure is commonly used as the <b>reference, </b>or <b>datum </b>pressure that is the starting point of the scale of measurement.<div><br></div><div><b>Gauge Pressure - </b>The difference in pressure recorded by the measuring instrument.</div>"
+            ],
+            "guid": "lE;j4mTpDX",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Absolute Pressure&nbsp;",
+                "The pressure considered relative to that of a perfect vaccum.&nbsp;<div><br></div><div>\\(P_abs=P_gauge+P_atm\\)<br></div>"
+            ],
+            "guid": "EST<Pk_6?J",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Presssure, Force as a Vector",
+                "The direction of the force also speciifies the direction of the imaginary plane.<div><br></div><div><b>Imaginary Plane -</b> is defined as the direction of a line perpendicular to, or normal to, the surface.</div><div><br></div><div><b>Pressure </b>is a scalar quantiy, <b>independent of direction.</b></div><div><b><br></b></div><div><b>Area </b>is a <b>vector quantity.</b></div>"
+            ],
+            "guid": "b+W!XC(~<$",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Inviscid Fluid",
+                "Fluid of ideal viscosity<div><br></div><div>Fluid of zero viscosity</div>"
+            ],
+            "guid": "ce5=odtA+d",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Path-Line&nbsp;",
+                "Contrast to a streamline, a path-line may be likened to an instantaneous photograph of a procession of praticles.<div><br></div><div>Time exposure showing the <b>direction </b>taken by the <b>same particle</b> at <b>successive instants of time</b>.</div>"
+            ],
+            "guid": "f/Sb,N:}L-",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Dynamic Similarity",
+                "The ratio of the foces must be constant between the model and the prototype.<div><br></div><div>The ratio of any&nbsp; force to another will be dimensionless.</div>"
+            ],
+            "guid": "pgUkezE}/5",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Assumptions for the Steady Flow Energy Equation",
+                "1. The flow is steady and continuous, that is, the rate at which mass enters<br>the region considered equals that at which mass leaves the region and<br>neither varies with time.<div><br>2. Conditions at any point between the inlet and outlet sections 1 and 2 do<br>not vary with time.</div><div><br><br>3. Heat and shaft work are transferred to or from the fluid at a constant<br>net rate.</div><div><br>4. Quantities are uniform over the inlet and outlet cross-sections 1 and 2.</div><div><br>5. Energy due to electricity, magnetism, surface tension or nuclear reaction<br>is absent. If energy due to any of these phenomena is, in fact, involved<br>appropriate additional terms will appear in the equations.</div>"
+            ],
+            "guid": "xEcJ^$RJqh",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Physical Similarity&nbsp;",
+                "Two systems are physically similar in respect to certain speccific physical quantities when the ratio of corresponding magnitudes of these quantities between the two systems is the same everywhere.<div><br></div><div><br></div><div>Geometric - Lengths&nbsp;</div><div><br></div><div>Kinematic - Lengths + time intervals or velocities</div><div><br></div><div>Dynamic - Forces</div><div><br></div><div>Thermal - Temperature differences</div><div><br></div><div>Chemical - Concentration differences</div>"
+            ],
+            "guid": "k6>T%WO]le",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Geometric Similarity&nbsp;",
+                "Geometric similarity is a fundamental requirement for a <b>model system </b>designed to <b>correspond </b>to a <b>prototype system.&nbsp;</b><div><b><br></b></div><div>Two systems are geometrically similar when the ratio of any length in one system to the corresponding length in another system is the same everywhere.</div><div><br></div><div>The <b>ratio </b>of <b>corresponding lengths </b>\\(X/X'=Y/Y'\\)</div><div><br></div><div>Perfect <b>Geometric Similarities </b>are not easily achieveble</div><div>- Scailing of surface roughness or finish</div><div>- Scailing of surface tension (i.e. a scale-down of a river results in a thin water layer where surface tensions will be more important than in the river).</div>"
+            ],
+            "guid": "HQTW5)/L,3",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Kinematic Similarities",
+                "Similarities of motion.&nbsp;<div><br></div><div>Similarity of time intervals.&nbsp;</div><div><br></div><div>Corresponding particles trace out geometrically similar paths in corresponding time intervals.</div>"
+            ],
+            "guid": "tW`EGQ=6*%",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Dynamic Similarity&nbsp;",
+                "Similarity of forces, crucial for modelling flow systems.<div><br></div><div>Dynamic similarity between model and prototype when all forces acting at corresponding points, on corresponding fluid elements or corresponding boundaries, form a constant ratio between model and prototype.</div>"
+            ],
+            "guid": "ryN775[DeL",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Number of Dimensionless Groups&nbsp;",
+                "number of dimensionless groups = m - n<div><br></div><div>m =&gt; Number of Variables&nbsp;</div><div><br></div><div>n =&gt; Number of Fundamental Dimensions&nbsp;</div>"
+            ],
+            "guid": "jKS/7csE6Y",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Isotropic&nbsp;</b>",
+                "An object or substance having a <b>physical property </b>which has the<b> same value</b> when measured in <b>different directions.</b>&nbsp;"
+            ],
+            "guid": "Dk6n|FTldP",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Heat Flux&nbsp;",
+                "The <b>rate of heat flow </b>across a <b>unit area </b>(\\(W m^(-2)\\))&nbsp;<div><br></div><div><b>Fouriers Law of Conduction</b></div>"
+            ],
+            "guid": "cn+?<cHp5P",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Momentum Flux&nbsp;",
+                "The <b>rate of transfer of momentum </b>across a <b>unit area.</b><div><b><br></b></div><div><b>Newton's Law of Viscosity - </b>The <b>momentum flux</b> is proportional to the <b>velocity gradient</b>.</div>"
+            ],
+            "guid": "B{g=hO|X4d",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Thermal Conductivity&nbsp;",
+                "Measure of the ability of a material to conduct heat.<div><br></div><div><b>Heat transfer</b> occurrs at a <b>lower rate </b>for materials with <b>lower thermal conductivity.&nbsp;</b></div><div><b><br></b></div><div>Low thermal conductivity materials are use as <b>Thermal Insulators.</b></div><div><b><br></b></div><div>High thermal conductivity materials are used as <b>Heat Sinks.&nbsp;</b></div><div><b><br></b></div><div><b>Thermal Resistivity - Reciprocal </b>of the <b>thermal conductivity.&nbsp;</b></div>"
+            ],
+            "guid": "l{@<Q3ErfL",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Thermal Resistivity&nbsp;",
+                "Reciprocal of thermal conductivity.&nbsp;"
+            ],
+            "guid": "u.ZiL$EE|3",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "No Slip Boundary Condition&nbsp;",
+                "Boundary condition assumption that proposes that the <b>velocity </b>of the <b>fluid layer </b>in <b>contact </b>with a <b>surface </b>has the <b>same velocity </b>as the <b>surface.</b><div><b><br></b></div><div><b>Boundary Slip - </b>A fluid that flows over a surface of a solid can be assumed to be in the form of <b>layers </b>that are brought to <b>rest </b>at the <b>surface </b>*No-Slip Boundary Condition*.</div><div><br></div><div><b>Assumption </b>is valid in <b>macroscpoic terms, </b>it breaks down in <b>microscopic/molecular level.</b></div><div><b><br></b></div><div><b>Boundary slip condition </b>occurs when the <b>viscosity </b>at the <b>surface </b>is different from the <b>bulk viscosity </b>of the fluid.&nbsp;<br><div><br></div><div>There is no slip between the fluid layer in contact with a boundary and the boundary itself.&nbsp;</div></div>"
+            ],
+            "guid": "hb8cZ[lPl<",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Flux&nbsp;",
+                "<div>Mass, Momentum, or Heat Transfer through a certain area in a certain time.&nbsp;</div><div><br></div><div>(amount / m<sup>2</sup>&nbsp;s)</div><div><br></div>Rate over time and over area."
+            ],
+            "guid": "Bwz$hT`^,W",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Kinematic Viscosity",
+                "The <b>Ratio </b>of the <b>Dynamic Viscosity </b>to the <b>Fluid Density.</b><div><b><br></b></div><div>\\(v=(\\mu)/(\\rho)\\)<b><br></b></div><div><br></div><div>Indicates the <b>rate of momentum transfer </b>of a fluid.</div>"
+            ],
+            "guid": "JL)k|>Ls{|",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fricks Law&nbsp;",
+                "<b>Mass flux </b>is <b>proportional </b>to the <b>concentration gradient.</b><div><b><br></b></div><div><b>Law&nbsp;</b>of&nbsp;<b>Diffusivity</b></div>"
+            ],
+            "guid": "Fto.Or=~Nt",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Mass Flux&nbsp;",
+                "The <b>rate </b>of <b>mass flow </b>across a <b>unit area.</b><div><b><br></b></div><div>An <b>alternate </b>from <b>Frick's Law </b>that includes the <b>molecular mass.</b></div>"
+            ],
+            "guid": "nmnR[9<z,X",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Diffusion Flux&nbsp;",
+                "The <b>rate </b>of <b>movement </b>of moleculas across a <b>unit area.</b>"
+            ],
+            "guid": "it8REFDN/.",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Wake&nbsp;",
+                "Region of recirculating fow immediately behind a moving or stationary blunt body.&nbsp;<div><br></div><div>Caused by viscosity.&nbsp;</div><div><br></div><div>May be accompanied by flow seperation and turbulence.</div><div><br></div><div>Wave pattern on the water surface downstream of an object in a flow.&nbsp;</div><div><br></div><div><b>Incompressible fluids </b>such as water (liquids), their incompressible nature leads to the displacement of the fluid resulting from the motion of an object.&nbsp;</div><div><br></div><div><b>Waves </b>spread outwards from the source until the energy is overcome or lost, due to <b>friction </b>or <b>dispersion.&nbsp;</b></div><div><b><br></b></div><div><b>Froude Number - </b>Non-dimensional parameter.&nbsp;</div>"
+            ],
+            "guid": "s!8:JD;qqe",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Tensor Quantity&nbsp;",
+                "Quantity that is independent of any coordinate system and can be readily expressed in any coordinate system.<div><br></div><div>Scalar - Rank 0 Tensor - Magnitude with zero direction&nbsp;</div><div><br></div><div>Vector - Rank 1 Tensor - Magnitude acting along a line of 1 dimension.&nbsp;</div><div><br></div><div>Rank 2 Tensor - 1 vector represents the orientation (direction of observation) (axis of rotation) of a surface and 1 vecotr represents the direction of a force acting along the surface of the material. - Stress Tensors and Strain Tensors.</div>"
+            ],
+            "guid": "EYJL&p9dSA",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Free Surface&nbsp;",
+                "Surface of a fluid that is subject to <b>zero parallel shear stress.</b><div><b><br></b></div><div>Interference between two <b>homogenous fluids.</b></div><div><b><br></b></div><div>Unlike liquids, <b>gasses </b>form a free surface on their own.&nbsp;</div>"
+            ],
+            "guid": "u^Tr#>rQ`P",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fully Developed Fluid Flow&nbsp;",
+                "Fluid flow is not influenced by <b>entrance efffects </b>and represents a <b>steady-flow situation.&nbsp;</b><div><b><br></b></div><div><b>Fully developed flow - </b>That for which the <b>velocity profile </b>does <b>not </b>vary along the <b>axis of flow.&nbsp;</b></div>"
+            ],
+            "guid": "N$5dxYwI(H",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Inviscid Flow&nbsp;",
+                "Flow conditions in wich the <b>viscous effects </b>are <b>neglected.</b><div><b><br></b></div><div>There exists <b>neither fractional nor pressure drag.</b></div>"
+            ],
+            "guid": "dk%j5I![|v",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Bernoulli Equaiton Assumptions&nbsp;",
+                "Inviscid Flow (constant viscosity)<div><br></div><div>Steady Flow (Steady-State Continuous Flow)</div><div><br></div><div>Incompressible Flow (constant density)</div><div><br></div><div>Equation applies along a Streamline&nbsp;</div>"
+            ],
+            "guid": "BM/acdC!#$",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Irrotational&nbsp;",
+                "Zero rotation at a point.&nbsp;"
+            ],
+            "guid": "FwSFM);tw*",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Creeping Flow&nbsp;",
+                "Laminar flow regime.&nbsp;<div><br></div><div>Low Reynolds numbers where <b>viscous forces predominate.&nbsp;</b></div><div><b><br></b></div><div>Flow pattern is almost <b>symmetrical</b></div><div><b><br></b></div><div><b>Creeping Flow - </b>Viscous effects predominate and extend <b>throughout </b>the <b>flow field.&nbsp;</b></div>"
+            ],
+            "guid": "D1CPNro#40",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Wetted Perimeter&nbsp;",
+                "The part of the cross section of a pipe or channe that is in contact with a liquid.&nbsp;"
+            ],
+            "guid": "cj.:8?`zUq",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Froude Number&nbsp;",
+                "Dimensionless number&nbsp;<div><br></div><div>Represents the <b>influnce </b>of <b>gravity </b>in the <b>power relationship </b>for <b>fluid systems </b>such as:</div><div><br></div><div>Pumping, mixing in <b>unbaffled tanks </b>and reactors and in fluidized beds.&nbsp;</div><div><br></div><div><b>Stirred Tanks&nbsp;</b></div><div><br></div><div>\\(Fr=(N^2)D/g\\)<br></div><div><br></div><div>D - Diameter of the Impeller&nbsp;</div><div><br></div><div>N - Rotational Speed (rps)</div>"
+            ],
+            "guid": "q@>I#I%FiS",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Fanning Friction Factor&nbsp;",
+                "Dimensionless friction factor.<div><br></div><div>Determining the <b>frictional pressure drop resistance </b>of a <b>moving fluid </b>in a <b>pipe </b>or over a <b>surface.&nbsp;</b></div><div><b><br></b></div><div><b>Frcition Factor - Proportionality Constant&nbsp;</b></div><div><b><br></b></div><div>The <b>wall shear stress </b>of a fluid at a surface is <b>proportional </b>to the <b>kinetic energy </b>of the fluid <b>per unit volume.&nbsp;</b></div>"
+            ],
+            "guid": "j2K1ca-a{C",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Hagen-Poiseuille Equation&nbsp;",
+                "<div><b>Assumptions&nbsp;</b></div><div><b><br></b></div><div>Fluid is <b>Newtonian </b>(<b>incompressible</b>, constant density), behaves as a <b>continuum.</b></div><div><b><br></b></div><div><b>Flow </b>is <b>laminar, steady-state, fully developed, incompressible.</b></div><div><br></div><div><br></div>Relates volumetric flow rate through a <b>horizontal pipe </b>of <b>circular cross-section </b>to the <b>pipe diameter, pipe length, fluid viscosity </b>and <b>pressure drop.&nbsp;</b><div><b><br></b></div><div>Used to calculate <b>laminar flow problems </b>in <b>pipes </b>to evaluate <b>pressure drops, fluid viscosities.&nbsp;</b></div><div><b><br></b></div><div><b>Dimensionally Homogenous </b>equation.&nbsp;</div>"
+            ],
+            "guid": "A7gn)=X1%~",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Head Losses due to Friction&nbsp;",
+                "Fittings such as valves, elbows.<div><br></div><div>Function of the <b>geometry </b>of the <b>fitting, reynolds number </b>and <b>roughness.&nbsp;</b></div><div><br></div><div><b>Equivelent Length - </b>The <b>length </b>of pipe that produces a <b>head loss equivelent </b>to the <b>head loss </b>in a particular fitting.&nbsp;</div><div><br></div><div><b>Total Effective Length - </b>Adding the <b>equivelent lengths </b>for the <b>fittings </b>to the <b>pipe length.&nbsp;</b></div><div><b><br></b></div><div><b>Assumption </b>- <b>Reynold's </b>number is <b>large enough </b>that the flow is <b>fully turbulent.&nbsp;</b></div>"
+            ],
+            "guid": "D*K<dHt6RQ",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Venturi Meter (Advantages and Disadvantages)",
+                "<b>Advantages&nbsp;</b><div><b><br></b></div><div>Less chance of getting stuck with sediment.</div><div>Elevated discharge coefficient.</div><div>Perfectly predictable behaviour.</div><div>Can be installed vertically, horizontally or inclined.</div><div>Precise and can be used for a wide range of flows.</div><div>About 90% of the pressure drop can be recovered.</div><div><div><br></div><div><b>Disadvantages</b></div></div><div><b><br></b></div><div>Large size, occupy space.&nbsp;</div><div>Elevated initial costs of installation.</div><div>Complex and expensive maintenance.</div><div>Requires long placement length, straight tube with no connections or misalignments to avoid turbulence in the flow, for satisfactory operation.</div><div>Minimum pipe diameter of 7.5 cm.&nbsp;</div><div>Cannot be modified to measure the pressure beyond a maximum speed.</div>"
+            ],
+            "guid": "n0603SB[b7",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Bubble Point and Dew Point&nbsp;",
+                "Both the bubble point and dew point are at the <b>same temperature </b>(<b>boiling point</b>) for a <b>pure component </b>species.<div><br></div><div><b>Bubble Point - </b>When heating a liquid, temperature at which the <b>first bubble of vapour appears.</b></div><div><b><br></b></div><div><b>Dew Point - </b>When cooling a liquid, temperature at which the <b>first dew (consensed) liquid appears. First drop of liquid.&nbsp;</b></div><div><b><br></b></div><div><b>Boiling Point - </b>Does <b>not </b>exist for a <b>mixture.</b></div><div><br></div>"
+            ],
+            "guid": "lutw2/3h]@",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Terminal Velocity",
+                "<b>Maximum velocity</b> attainable by an object as it falls through a <b>fluid&nbsp;</b><div><b><br></b></div><div>At terminal velocity <b>du/dt = 0 </b>(zero acceleration), speed is <b>constant </b>due to the <b>restraining </b>force <b>exerted </b>by the <b>fluid </b>through which it is moving.&nbsp;</div><div><br></div><div>As the speed incraeases, at a given speed, the <b>drag&nbsp;</b>or <b>resistance force </b>will equal the <b>gravitational pull </b>on the <b>object </b>(<b>buoyance</b>).</div><div><br></div><div><b>Drag </b>is dependent upon the <b>projected area, </b>the objects cross-section or silhouette in a <b>horizontal plane.&nbsp;</b></div><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </b>The greater the <b>projected area of an object </b>(like a <b>parachute</b>), the <b>lower </b>the <b>terminal velocity.&nbsp;</b></div><div><br></div><div>T<span style=\"color: rgb(32, 33, 34);\">his is because the downward force (weight) is proportional to the cube of the linear dimension, but the air resistance is approximately proportional to the cross-section area which increases only as the square of the linear dimension. For very small objects such as dust and mist, the terminal velocity is easily overcome by convection currents which prevent them from reaching the ground and hence they stay suspended in the air for indefinite periods. Air pollution and fog are examples of this.</span></div><div><br></div>"
+            ],
+            "guid": "v.k=dQf1|g",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "<b>Projected Area&nbsp;</b>",
+                "<b>Two-dimensional area measurement </b>of a <b>three-dimensional object, </b>by projecting its shape onto an <b>arbitrary plane.&nbsp;</b><div><b><br></b></div><div><b><br></b></div><div><b>Parallel projection </b>of a <b>surface </b>of any <b>shape </b>onto a <b>plane&nbsp;</b></div><div><b><br></b></div><div><img src=\"paste-6ce1e5bca1fd2d2601f6a1a635007ee3dcbe37dd.jpg\"><br></div><div>Where A is the <b>original area, </b>B is the angle between the normal to the local plane andd the line of sigt to the surface A.</div><div><br></div><div><img src=\"paste-4c02ada64c170968f89e013d737447f96cd52592.jpg\"><br></div><div><b><br></b></div>"
+            ],
+            "guid": "rc7miZu0bi",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Nozzles",
+                "<div><b>Ideal Nozzle / Ideal Diffuser </b>(outlet diameter is larger than inlet diamater, <b>diffuser </b>has a <b>pressure increase</b>)</div><div><br></div><div>Assuming <b>continuity </b>in all cases.</div><div><br></div><div>The <b>pressure </b>is the <b>driving force </b>of the <b>fluid&nbsp;</b></div><div><b><br></b></div><div><b>Fluid </b>moving <b>faster </b>has a <b>lower pressure.</b></div><div><b><br></b></div><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Outlet Diameter </b>(nozzle outlet is smaller than inlet)</div><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Outlet Temerature </b>(temperature decrease)</div><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Outlet Velocity </b>(velocity increase, kinetic energy gain from internal energy)</div><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Inlet Pressure </b>(pressure decrease)</div><div><br></div><div><img src=\"paste-f2689a2c473b85e9e747b1e5a953c115245bbfd5.jpg\"><br></div><b><div><b><br></b></div><div><b><br></b></div><div><b><br></b></div>Accelerate </b>a fluid at <b>high velocity, </b>converting some of the fluid's <b>internal energy </b>into <b>kinetic energy.&nbsp;</b><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; Temperature </b>decrease at the outlet when compared to the inlet.</div><div><br></div><div><b>Adiabatic conditions </b>may be assumed</div><div><br></div><div><b>Nozzle frictional effects </b>can be <b>neglected </b>if <b>significant changes </b>of the <b>cross-sectional area </b>occur.Therefore <b>denisty </b>and <b>velocity </b>occur over only a <b>short length </b>of the <b>conduit.&nbsp;</b></div>"
+            ],
+            "guid": "8)$.!4^&}",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        },
+        {
+            "__type__": "Note",
+            "fields": [
+                "Bernoulli's Equation&nbsp;",
+                "<b>Conservation of Energy </b>within a <b>fluid</b><div><b>&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Energy bslsnvrv&nbsp;<br></b><div><b><br></b></div><div><b>Pressure </b>is the driving force of the <b>Fluid&nbsp;</b></div><div><b><br></b></div><div><b>F&nbsp; = PA </b>(force is the product of a pressure exerted on a cross-sectional area)</div><div><br></div><div><img src=\"paste-8b064235fc7f8c367636b4f623b6823e2eff1beb.jpg\"><br></div></div>"
+            ],
+            "guid": "eLW<8g#+XR",
+            "note_model_uuid": "21d9b8ca-ff8d-11ea-96a5-9c305bfc3a44",
+            "tags": []
+        }
+    ]
+}
